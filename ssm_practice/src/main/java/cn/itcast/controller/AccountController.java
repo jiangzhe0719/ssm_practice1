@@ -1,4 +1,4 @@
-package cn.itcast.controller;
+﻿package cn.itcast.controller;
 
 import cn.itcast.domain.Account;
 import cn.itcast.service.AccountService;
@@ -33,6 +33,8 @@ public class AccountController {
         List<Account> accountList = accountService.findAll();
         //存放到request域
         model.addAttribute("list", accountList);
+System.out.println("2...");
+System.out.println("2...");
         return "list";
     }
 
